@@ -1,0 +1,269 @@
+
+  
+  .pageContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 100% of the viewport height */
+  }
+  
+  .navBar {
+    background-color: #00000000;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+  
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+
+  }
+  
+  nav ul li {
+    margin-right: 60px;
+
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    text-decoration: none;
+    color: #7053b4;
+    font-weight: bold;
+  }
+  
+  .body {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: 90%;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img {
+    max-width: 100%;
+    
+  }
+  .websiteTitle{
+
+    color: white;
+    font-weight: bold;
+    font-size: 63px;
+    margin: 0;
+  }
+
+  .catchPhrase {
+    font-size: 1.3em; /* Adjust the font size based on your design */
+    color: #f0efef; /* Adjust the color based on your design */
+    margin-top: 10px; /* Adjust the margin based on your design */
+    line-height: 1.4; /* Adjust the line height for better readability */
+    
+  }
+  .getStarted{
+  //background-color: #4CAF50;/* Green background color, adjust to your preference */
+  background-color: #7053b4; 
+  color: #fff; /* Text color for the button in a dark theme */
+  padding: 15px 25px; /* Adjust the padding based on your design */
+  font-size: 1.2em; /* Adjust the font size based on your design */
+  border: none;
+  border-radius: 5px; /* Adjust the border-radius for rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;/* Smooth transition on hover */
+ 
+}
+.features{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+
+}
+.aboutUs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+  width: 100%;
+
+  padding-top: 50px;
+}
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contactUs {
+  margin-top: 50px;
+
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .contactDetails {
+    display: flex;
+    justify-content: center;
+
+    .contactItem {
+      margin: 0 20px;
+
+      h2 {
+        font-size: 18px;
+        color: #444;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #777;
+      }
+    }
+  }
+}
+
+.aboutItems{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.aboutItems1{
+  margin-bottom: 100px;
+}
+.item{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #00000088;
+  height: 200px;
+  border-radius: 15px;
+  padding: 39px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.item:hover{
+  background-color: #7053b44c;
+  border: 2px solid #7053b4;
+  transition: background-color 0.3s ease;
+  transform: scale(1.03); 
+
+}
+  
+/* Media query for smaller screens, adjust as needed */
+@media screen and (max-width: 699px) {
+  .websiteTitle {
+    font-size: 30px; /* Adjust the font size for smaller screens */
+  }
+
+  .catchPhrase {
+    font-size: 1em; /* Adjust the font size for smaller screens */
+  }
+  .getStarted{
+    padding: 10px 15px; /* Adjust the padding based on your design */
+    font-size: 1em; /* Adjust the font size based on your design */
+    border: none;
+    border-radius: 5px; /* Adjust the border-radius for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;/* Smooth transition on hover */
+   
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr ;
+    place-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .aboutItems{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-column-gap: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  
+  }
+  .item{
+    height: 220px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen  and (min-width: 700px) and (max-width: 1300px) {
+  .websiteTitle {
+    font-size: 50px; /* Adjust the font size for smaller screens */
+  }
+
+  .catchPhrase {
+    font-size: 1.1em; /* Adjust the font size for smaller screens */
+  }
+  .getStarted{
+    padding: 15px 20px; /* Adjust the padding based on your design */
+    font-size: 1em; /* Adjust the font size based on your design */
+    border: none;
+    border-radius: 5px; /* Adjust the border-radius for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;/* Smooth transition on hover */
+   
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .aboutItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}

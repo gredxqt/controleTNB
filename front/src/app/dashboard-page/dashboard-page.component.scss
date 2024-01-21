@@ -1,0 +1,132 @@
+/*a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+a:hover {
+    color: #f1f1f1;
+  }*/
+  hr {
+    height: 1px;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    border: 0;
+  }
+  hr:after {
+    display: block;
+    content: '';
+    height: 30px;
+    background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 50px; /* Adjust margin as needed */
+}
+
+
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    
+}
+
+.linkButton {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.1s;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+}
+
+.linkButton:hover {
+    color: #f1f1f1;
+}
+.icon{
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
+.body{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+.logout{
+    color: rgba(237, 86, 86, 0.73);
+}
+.logout:hover {
+    color: rgb(220, 24, 24);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .sidenav { 
+        padding-top: 15px; 
+        width: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body{
+        display: grid;
+        grid-template-columns: 70px 1fr;
+    }
+   
+    .logo-container{
+        margin-left: 0px;
+        margin-bottom: 70px;
+    }
+    .logo-container h2 {
+        
+        display: none;
+    }
+    .linkButton span {
+        
+        display: none;
+    }
+
+}

@@ -1,0 +1,89 @@
+.pageContainer{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.tableContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+  .table{
+    width:60rem;
+  }
+  th, td{
+    text-align: center;
+  }
+  .captionContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    justify-content: center;
+    width: 100%;
+  }
+  .clearContainer{
+    display: flex;
+    justify-content: left;
+  }
+  .newAccountContainer{
+    display: flex;
+    justify-content: right;
+  }
+  .inputContainer{
+    display: flex;
+    justify-content: center;
+  
+  }
+    .inputContainer input{
+        width: 270px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #9f9fc3;
+        padding: 5px 30px 5px 15px;
+    }
+    .inputContainer input:active {
+        border-color: #9f9fc3;
+    }
+   
+    .searchIcon {
+        color: #9f9fc3;
+    }
+    .p-field{
+        display: grid;
+        grid-template-columns: 100px 270px;
+        margin-top: 24px;
+     
+    }
+    
+    .formAccount{
+      overflow: hidden;
+    }
+    .formAccount input{
+       
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #9f9fc3;
+        padding: 5px 30px 5px 15px;
+    }
+    .dialog{
+        width:500px;
+    }
+    .action{
+        text-align: center;
+
+    }
+    .action i{
+        border: 2px solid #9f9fc3;
+        border-radius: 5px;
+        padding: 5px;
+        margin-left: 20px;
+    }
+
+    :host ::ng-deep .p-datepicker {
+      transform: scale(0.7); /* Adjust the scale to your desired value */
+    }
+
+    .p-fluid{
+      overflow: visible !important;
+      z-index: 1;
+    }

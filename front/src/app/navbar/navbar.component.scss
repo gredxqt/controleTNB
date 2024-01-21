@@ -1,0 +1,44 @@
+
+  
+.topnav {
+    overflow: hidden;
+    background-color: #11111170;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-left:1px solid #111111;
+  }
+
+.topnav-right {
+    float: right;
+  }
+.title{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 30px;
+  }
+  .nomProfile{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .nomProfile:hover{
+    color: #f1f1f1;
+  }
+  .imageProfile{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+  .profile{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }

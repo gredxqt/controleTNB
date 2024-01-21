@@ -1,0 +1,15 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: CATEGORY
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/category?createDatabaseIfNotExist=true
+    username: "admin"
+    password: "admin"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

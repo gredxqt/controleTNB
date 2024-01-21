@@ -1,0 +1,135 @@
+<section>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <span></span> <span></span> <span></span> <span></span> <span></span>
+  <div class="signin">
+    <div class="content">
+      <h2>Sign Up</h2>
+      <form (ngSubmit)="onSubmit()" class="form">
+        <div class="inputBox">
+          <input
+            class="inputText"
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            [(ngModel)]="firstName"
+            [ngModelOptions]="{ standalone: true }"
+            required
+          />
+        </div>
+        <div class="inputBox">
+          <input
+            class="inputText"
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            [(ngModel)]="lastName"
+            [ngModelOptions]="{ standalone: true }"
+            required
+          />
+        </div>
+        <div class="inputBox">
+          <input
+            class="inputText"
+            type="email"
+            name="email"
+            placeholder="Email adress"
+            [(ngModel)]="email"
+            [ngModelOptions]="{ standalone: true }"
+            required
+          />
+        </div>
+        <div class="inputBox">
+          <input
+            class="inputText"
+            type="password"
+            name="password"
+            placeholder="Password"
+            [(ngModel)]="password"
+            [ngModelOptions]="{ standalone: true }"
+            required
+          />
+        </div>
+        <div class="inputBox">
+          <input
+            class="inputText"
+            type="number"
+            name="salary"
+            placeholder="Salary"
+            [(ngModel)]="salary"
+            [ngModelOptions]="{ standalone: true }"
+            required
+          />
+        </div>
+        <!-- hnaya khass datepicker -->
+        <div class="inputBox">
+          <input
+            class="inputText"
+            type="number"
+            name="amount"
+            placeholder="Current Savings"
+            [(ngModel)]="amount"
+            [ngModelOptions]="{ standalone: true }"
+            required
+          />
+        </div>
+        <div class="links">
+          <p href="#">Already have an account? <a href="/login">Sign in</a></p>
+        </div>
+        <div class="inputBox">
+          <input name="register" class="submitButton" type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- partial -->
